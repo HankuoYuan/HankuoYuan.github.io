@@ -11,6 +11,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "i692zorhjj");
 </script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 <body>
     <div class="home">
@@ -80,7 +81,14 @@
         </audio>
         <img class="music_img" src="./img/music.png" alt=""> -->
     </div>
-
+    <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'tEdTVYiztKWcIVm2IerUQFEB-gzGzoHsz',
+            appKey: 'EuaNzu1WmBhv6M44U7JK3MCF'
+        })
+    </script>
 </body>
 <!-- <script>
     let mucics = document.getElementById('audio')
